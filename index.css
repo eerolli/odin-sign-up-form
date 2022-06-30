@@ -1,0 +1,62 @@
+:root{
+
+}
+@font-face {
+    font-family: Nordic;
+    src: url(./fonts/Nordic\ Alternative\ Regular.ttf);
+}
+
+html{
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.panel{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-image: url("./images/chalet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    background-color: rgba(71, 75, 82, 70%);
+    display: flex;
+    height: 20%;
+    margin-top: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-image{
+    max-height: 90%;
+    margin-left: auto;
+}
+
+.title {
+    margin-right: auto;
+    color: white;
+    font-family: Nordic, sans-serif;
+    font-size: 3rem;
+}
+
+.photo-credit{
+    position: relative;
+    margin: auto auto 5px auto;
+}
+
+.content {
+    flex-basis: 2;
+    flex-shrink: 0;
+}
