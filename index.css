@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 @font-face {
     font-family: Nordic;
     src: url(./fonts/Nordic\ Alternative\ Regular.ttf);
@@ -6,6 +8,7 @@
 html{
     min-height: 100vh;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -54,11 +57,17 @@ body{
 }
 
 .content {
-    max-width: 60%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     background-color: #f2f5fa;
+}
+
+.text {
+    line-height: 1.6;
+    font-size: 1.5rem;
+    width: 40rem;
 }
 
 .top, .bottom{
@@ -74,11 +83,45 @@ body{
 form {
     display: flex;
     flex-wrap: wrap;
+    flex: 0 1 auto;
     gap: 3rem;
+    max-width: 35rem;
 }
 
 .form-element {
     display: flex;
     flex-direction: column;
     min-width: 15rem;
+}
+
+input {
+    border-radius: 3px;
+    border-color: #e5e7eb;
+    padding: 3px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #577eff;
+    box-shadow: 1px 1px 5px;    
+}
+
+label {
+    color: rgba(71, 75, 82, 70%);
+}
+
+.error {
+    border-color: red;
+}
+
+.create {
+    background-color: #fe9e50;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    color: #060407;
+    font-size: large;
+}
+
+span {
+    color: #fe9e50;
 }
