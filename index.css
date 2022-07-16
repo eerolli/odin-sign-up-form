@@ -114,6 +114,21 @@ label {
     border-color: red;
 }
 
+.error-wrapper{
+    position: relative;
+}
+
+.error-message {
+    color: red;
+    display: none;
+    position: absolute;
+    font-size: 0.9rem;
+}
+
+.success {
+    border-color: green;
+}
+
 .create {
     background-color: #fe9e50;
     border-radius: 5px;

@@ -26,7 +26,7 @@
             </div>
             <div class="middle">
                 <p class="text">Let's do this!</p>
-                <form action="" method="post">
+                <form id="sign-up" action="" method="post">
                     <div class="form-element">
                         <label for="fname">First Name</label>
                         <input type="text" id="fname" name="fname">
@@ -45,13 +45,16 @@
                     </div>
                     <div class="form-element">
                         <label for="pswd">Password</label>
-                        <input type="password" id="pswd" name="pswd">
+                        <input class="password" id="password1" type="password" id="pswd" name="pswd">
                     </div>
                     <div class="form-element">
                         <label for="pswd2">Confirm Password</label>
-                        <input type="password" name="pswd2" id="pswd2">
+                        <input class="password" id="password2" type="password" name="pswd2" id="pswd2">
                     </div>
                 </form>
+                <div class="error-wrapper">
+                    <p class="error-message">Passwords do not match</p>
+                </div>
             </div>
             <div class="bottom">
                 <button class="create">Create Account</button>
@@ -60,4 +63,5 @@
        </main>
     </div>    
 </body>
+<script src="index.js"></script>
 </html>
