@@ -2,23 +2,22 @@ let form = document.getElementById("sign-up");
 let submit = document.querySelector(".create");
 let passWords = document.querySelectorAll(".password");
 let errorMessage = document.querySelector(".error-message")
+let succesMessage = document.querySelector(".success-message")
 
 function showErrorMessage(){
-    if (errorMessage.style.display === "none") {
-        errorMessage.style.display = "block";
-    }
+    errorMessage.style.display = "block";
+    succesMessage.style.display = "none";
 }
 
 function removeErrorMessage(){
-    if (erroMessage.style.display === "block") {
-        errorMessage.style.display = "none"
-    }
+    errorMessage.style.display = "none";
+    succesMessage.style.display = "block";
 }
 
 function checkPswd(){
     let passWordOne = document.getElementById("password1").value;
     let passWordTwo = document.getElementById("password2").value;
-
+    
     if (passWordTwo != passWordOne) {
         passWords.forEach(item => {
             item.classList.remove("success")

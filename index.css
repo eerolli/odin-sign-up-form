@@ -54,6 +54,8 @@ body{
 .photo-credit{
     position: relative;
     margin: auto auto 5px auto;
+    color: #fe9e50;
+    background-color: rgba(71, 75, 82, 70%);
 }
 
 .content {
@@ -114,12 +116,19 @@ label {
     border-color: red;
 }
 
-.error-wrapper{
+.message-wrapper{
     position: relative;
 }
 
 .error-message {
     color: red;
+    display: none;
+    position: absolute;
+    font-size: 0.9rem;
+}
+
+.success-message{
+    color: green;
     display: none;
     position: absolute;
     font-size: 0.9rem;
